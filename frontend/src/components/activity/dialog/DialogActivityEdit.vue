@@ -31,6 +31,7 @@ import DialogForm from '@/components/dialog/DialogForm.vue'
 import DialogBase from '@/components/dialog/DialogBase.vue'
 import DialogActivityForm from './DialogActivityForm.vue'
 import { firstActivityScheduleEntryRoute } from '@/router.js'
+import { reloadScheduleEntries } from '@/helpers/reloadScheduleEntries.js'
 
 export default {
   name: 'DialogActivityEdit',
@@ -111,7 +112,7 @@ export default {
             })
             .catch(async (e) => {
               // entry was deleted in the meantime
-              if (e.response.status === 404) {
+              if (e.response?.status === 404) {
                 if (entry.self === this.scheduleEntry._meta.self) {
                   // redirect to first entry to not break UI
                   this.$router.push(await firstActivityScheduleEntryRoute(this.activity))
@@ -155,10 +156,11 @@ export default {
       this.$emit('submit')
       return promise
     },
-    updatedSuccessful(data) {
+    async updatedSuccessful(data) {
       this.close()
       this.api.reload(this.activity)
-      this.api.reload(this.scheduleEntry.period().scheduleEntries())
+      // schedule entries may have been moved to another period, so reload all of them
+      await reloadScheduleEntries(this.scheduleEntry.period().camp(), this.api)
       this.$emit('activityUpdated', data)
     },
   },

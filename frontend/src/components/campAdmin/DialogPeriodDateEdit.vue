@@ -119,6 +119,16 @@ export default {
     },
   },
   methods: {
+    async onSuccess(response) {
+      const result = DialogBase.methods.onSuccess.call(this, response)
+      // changing the dates may move or remove schedule entries, and changes days and day responsibles
+      await Promise.all([
+        this.api.reload(this.period.scheduleEntries()),
+        this.api.reload(this.period.days()),
+        this.api.reload(this.period.dayResponsibles()),
+      ])
+      return result
+    },
     updateStartAndNotify(start) {
       this.entityData.start = start
       this.startChanged()
