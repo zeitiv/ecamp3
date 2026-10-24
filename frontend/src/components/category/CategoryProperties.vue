@@ -18,6 +18,7 @@
 
 <script>
 import ApiForm from '@/components/form/api/ApiForm.vue'
+import { reloadScheduleEntries } from '@/helpers/reloadScheduleEntries.js'
 import ApiSelect from '@/components/form/api/ApiSelect.vue'
 import ApiColorPicker from '@/components/form/api/ApiColorPicker.vue'
 import ApiTextField from '@/components/form/api/ApiTextField.vue'
@@ -39,12 +40,7 @@ export default {
   },
   methods: {
     reloadScheduleEntries() {
-      this.category
-        .camp()
-        .periods()
-        .items.forEach((period) => {
-          this.api.reload(period.scheduleEntries())
-        })
+      return reloadScheduleEntries(this.category.camp(), this.api)
     },
   },
 }
