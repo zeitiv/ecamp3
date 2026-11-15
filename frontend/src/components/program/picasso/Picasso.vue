@@ -411,6 +411,10 @@ export default {
     bottom: calc(56px + env(safe-area-inset-bottom));
     left: 0;
     right: 0;
+
+    :deep(.v-calendar-daily__body) {
+      padding-bottom: 80px;
+    }
   }
 
   @media #{map.get(settings.$display-breakpoints, 'sm-and-up')} {
