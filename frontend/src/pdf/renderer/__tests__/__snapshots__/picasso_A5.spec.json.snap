@@ -1682,13 +1682,19 @@
                                   "props": {
                                     "class": "picasso-schedule-entry-responsibles-names",
                                     "key": 1,
+                                    "style": {
+                                      "backgroundColor": "#4DBB52",
+                                      "paddingLeft": "1.5pt",
+                                    },
                                   },
                                   "style": {
+                                    "backgroundColor": "#4DBB52",
                                     "display": "flex",
                                     "flexDirection": "row-reverse",
                                     "flexWrap": "wrap-reverse",
                                     "fontStyle": "italic",
                                     "gap": "1pt",
+                                    "paddingLeft": "1.5pt",
                                     "paddingRight": "1pt",
                                     "textAlign": "right",
                                   },
