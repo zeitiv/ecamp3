@@ -15,17 +15,31 @@
       <Link class="picasso-schedule-entry-link" :href="linkTarget">
         <Text
           class="picasso-schedule-entry-title"
-          :style="{ fontSize: fontSize + 'pt', color: textColor }"
+          :hyphenation-callback="hyphenationCallback"
+          :style="{
+            fontSize: fontSize + 'pt',
+            color: textColor,
+            maxLines: titleLines,
+            textOverflow: 'ellipsis',
+          }"
         >
-          <Text :style="{ fontWeight: 500 }"
-            ><Text class="tabular-nums">{{ scheduleEntry.number }}</Text>
-            {{ category + ': ' + title }}
-          </Text>
+          <Text class="tabular-nums">{{ scheduleEntry.number }}</Text>
+          {{ category + ': ' }}
+          <Text :style="{ fontWeight: 600 }">{{ title }}</Text>
           <Text :style="{ fontSize: fontSize * 0.8 + 'pt' }">{{
             locationAfterTitle + ysPhysicalActivityDurationAfterTitle
           }}</Text>
         </Text>
       </Link>
+      <Text
+        v-if="locationBelowTitle"
+        class="picasso-schedule-entry-location"
+        :style="{
+          fontSize: fontSize * 0.8 + 'pt',
+          color: textColor,
+        }"
+        >{{ location }}</Text
+      >
       <View
         class="picasso-schedule-entry-spacer"
         :class="{ 'picasso-schedule-entry-spacer-compact': compact }"
@@ -55,14 +69,14 @@
         <Responsibles
           v-if="avatars"
           class="picasso-schedule-entry-responsibles"
-          v-bind="responsiblesBackground"
+          :style="{ backgroundColor: color }"
           :activity="scheduleEntry.activity()"
           avatars
         />
         <View
           v-else
           class="picasso-schedule-entry-responsibles-names"
-          v-bind="responsiblesBackground"
+          :style="{ backgroundColor: color }"
         >
           <Text v-for="name in responsibleNames">{{ name }}</Text>
         </View>
@@ -112,13 +126,22 @@ export default {
     locationShown() {
       return this.showLocation && !!this.location
     },
-    locationAfterTitle() {
-      if (!this.locationShown) return ''
-      return (this.twoLinesFit ? '\n' : ' ') + this.location
+    locationBelowTitle() {
+      return this.locationShown && this.twoLinesFit
     },
-    responsiblesBackground() {
-      if (!this.locationShown) return {}
-      return { style: { backgroundColor: this.color, paddingLeft: '1.5pt' } }
+    locationAfterTitle() {
+      if (!this.locationShown || this.locationBelowTitle) return ''
+      return ' ' + this.location
+    },
+    lines() {
+      return Math.max(1, Math.floor(this.textHeight / this.fontSize))
+    },
+    hyphenationCallback() {
+      return this.lines === 1 ? (word) => word.split('') : undefined
+    },
+    titleLines() {
+      const lineForResponsibles = this.lines >= 3 && this.responsibleNames.length > 0
+      return lineForResponsibles ? this.lines - 1 : this.lines
     },
     ysPhysicalActivityDuration() {
       return ysPhysicalActivityDurationFormatted(
@@ -188,6 +211,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   min-height: 0;
+  overflow: hidden;
 }
 .picasso-schedule-entry-variant-start,
 .picasso-schedule-entry-variant-default {
@@ -212,9 +236,10 @@ export default {
   max-height: 0pt;
 }
 .picasso-schedule-entry-title {
-  height: 16pt;
   line-height: 1;
-  flex-grow: 1;
+}
+.picasso-schedule-entry-location {
+  line-height: 1;
 }
 .picasso-schedule-entry-ys-physical-activity-duration-container {
   position: absolute;
@@ -232,6 +257,7 @@ export default {
   font-style: italic;
   text-align: right;
   gap: 1pt;
+  padding-left: 1.5pt;
   padding-right: 1pt;
 }
 .picasso-schedule-entry-responsibles-container {

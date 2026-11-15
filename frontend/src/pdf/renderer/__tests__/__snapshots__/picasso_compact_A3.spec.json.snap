@@ -1543,39 +1543,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "1.1",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "1.1",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LS:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LS: Stadt Game 🐭",
+                                          "value": "Stadt Game 🐭",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -1597,17 +1602,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 2,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 2,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -1708,9 +1716,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#4DBB52",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#4DBB52",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -1776,6 +1788,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -1832,39 +1845,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "1.2",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "1.2",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LP:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LP: Anreise",
+                                          "value": "Anreise",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -1886,17 +1904,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 3,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 3,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -1950,9 +1971,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#90B7E4",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#90B7E4",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -2018,6 +2043,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -2074,39 +2100,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "1.A",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "1.A",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LA:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LA: Lagerbau",
+                                          "value": "Lagerbau",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -2128,17 +2159,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 6,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 6,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -2192,9 +2226,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#FF9800",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#FF9800",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -2260,6 +2298,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -2316,39 +2355,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "1.3",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "1.3",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " ES:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " ES: Essen",
+                                          "value": "Essen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -2370,17 +2414,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 6,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 6,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -2434,9 +2481,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#BBBBBB",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#BBBBBB",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -2502,6 +2553,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -2558,39 +2610,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "1.4",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "1.4",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LP:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LP: Takeoff",
+                                          "value": "Takeoff",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -2612,17 +2669,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": [Function],
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "6.9444444444445pt",
+                                      "maxLines": 1,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "6.9444444444445pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 1,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -2676,9 +2736,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#90B7E4",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#90B7E4",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -2744,6 +2808,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -2800,39 +2865,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "1.5",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "1.5",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LP:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LP: Flugzeugabsturz",
+                                          "value": "Flugzeugabsturz",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -2854,17 +2924,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": [Function],
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 1,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 1,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -2918,9 +2991,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#90B7E4",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#90B7E4",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -2986,6 +3063,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -3446,39 +3524,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "2.1",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "2.1",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LS:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LS: Morgenturnen",
+                                          "value": "Morgenturnen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -3500,17 +3583,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": [Function],
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "6.944444444444446pt",
+                                      "maxLines": 1,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "6.944444444444446pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 1,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -3564,9 +3650,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#4DBB52",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#4DBB52",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -3632,6 +3722,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -3688,39 +3779,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "2.2",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "2.2",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " ES:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " ES: Essen",
+                                          "value": "Essen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -3742,17 +3838,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 3,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 3,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -3806,9 +3905,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#BBBBBB",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#BBBBBB",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -3874,6 +3977,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -3930,39 +4034,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "2.3",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "2.3",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LP:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LP: Lagerbau",
+                                          "value": "Lagerbau",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -3984,17 +4093,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 3,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 3,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -4048,9 +4160,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#90B7E4",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#90B7E4",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -4116,6 +4232,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -4172,39 +4289,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "2.4",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "2.4",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LS:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LS: Insel erkunden",
+                                          "value": "Insel erkunden",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -4226,17 +4348,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 5,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 5,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -4290,9 +4415,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#4DBB52",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#4DBB52",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -4358,6 +4487,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -4414,39 +4544,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "2.5",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "2.5",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " ES:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " ES: Essen",
+                                          "value": "Essen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -4468,17 +4603,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 6,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 6,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -4532,9 +4670,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#BBBBBB",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#BBBBBB",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -4600,6 +4742,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -4656,39 +4799,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "2.6",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "2.6",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LS:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LS: Angriff der Aborigines",
+                                          "value": "Angriff der Aborigines",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -4710,17 +4858,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 7,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 7,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -4774,9 +4925,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#4DBB52",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#4DBB52",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -4842,6 +4997,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -4898,39 +5054,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "2.7",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "2.7",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LP:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LP: Pfadiversprechen",
+                                          "value": "Pfadiversprechen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -4952,17 +5113,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 6,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 6,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -5016,9 +5180,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#90B7E4",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#90B7E4",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -5084,6 +5252,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -5140,39 +5309,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "2.8",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "2.8",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " ES:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " ES: Essen",
+                                          "value": "Essen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -5194,17 +5368,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 6,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 6,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -5258,9 +5435,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#BBBBBB",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#BBBBBB",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -5326,6 +5507,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -5382,39 +5564,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "2.9",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "2.9",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LP:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LP: Essen zurückerobern",
+                                          "value": "Essen zurückerobern",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -5436,17 +5623,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 6,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 6,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -5500,9 +5690,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#90B7E4",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#90B7E4",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -5568,6 +5762,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -6028,39 +6223,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "3.1",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "3.1",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LS:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LS: Morgenturnern",
+                                          "value": "Morgenturnern",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -6082,17 +6282,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": [Function],
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 1,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 1,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -6146,9 +6349,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#4DBB52",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#4DBB52",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -6214,6 +6421,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -6270,39 +6478,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "3.2",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "3.2",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " ES:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " ES: Essen",
+                                          "value": "Essen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -6324,17 +6537,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 3,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 3,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -6388,9 +6604,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#BBBBBB",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#BBBBBB",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -6456,6 +6676,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -6512,39 +6733,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "3.3",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "3.3",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LP:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LP: Atelier",
+                                          "value": "Atelier",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -6566,17 +6792,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 8,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 8,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -6630,9 +6859,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#90B7E4",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#90B7E4",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -6698,6 +6931,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -6754,39 +6988,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "3.4",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "3.4",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " ES:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " ES: Essen",
+                                          "value": "Essen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -6808,17 +7047,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 3,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 3,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -6872,9 +7114,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#BBBBBB",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#BBBBBB",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -6940,6 +7186,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -6996,39 +7243,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "3.A",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "3.A",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LA:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LA: Pfadiversprechen",
+                                          "value": "Pfadiversprechen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -7050,17 +7302,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 7,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 7,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -7114,9 +7369,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#FF9800",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#FF9800",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -7182,6 +7441,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -7238,39 +7498,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "3.5",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "3.5",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LS:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LS: Abschluss geländegame",
+                                          "value": "Abschluss geländegame",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -7292,17 +7557,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 8,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 8,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -7356,9 +7624,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#4DBB52",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#4DBB52",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -7424,6 +7696,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -7480,39 +7753,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "3.6",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "3.6",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LP:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LP: Vorbereitung BiPi Feuer",
+                                          "value": "Vorbereitung BiPi Feuer",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -7534,17 +7812,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 4,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 4,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -7598,9 +7879,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#90B7E4",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#90B7E4",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -7666,6 +7951,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -7722,39 +8008,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "3.7",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "3.7",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " ES:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " ES: Essen",
+                                          "value": "Essen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -7776,17 +8067,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 6,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 6,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -7840,9 +8134,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#BBBBBB",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#BBBBBB",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -7908,6 +8206,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -7964,39 +8263,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "3.8",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "3.8",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LP:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LP: Bi-Pi Feuer",
+                                          "value": "Bi-Pi Feuer",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -8018,17 +8322,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 9,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 9,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -8082,9 +8389,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#90B7E4",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#90B7E4",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -8150,6 +8461,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -8610,39 +8922,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "4.1",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "4.1",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LS:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LS: Morgenturnen",
+                                          "value": "Morgenturnen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -8664,17 +8981,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": [Function],
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 1,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 1,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -8728,9 +9048,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#4DBB52",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#4DBB52",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -8796,6 +9120,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -8852,39 +9177,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "4.2",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "4.2",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " ES:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " ES: Essen",
+                                          "value": "Essen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -8906,17 +9236,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 3,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 3,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -8970,9 +9303,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#BBBBBB",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#BBBBBB",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -9038,6 +9375,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -9094,39 +9432,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "4.A",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "4.A",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LA:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LA: Lagerabbau",
+                                          "value": "Lagerabbau",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -9148,17 +9491,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 10,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 10,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -9212,9 +9558,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#FF9800",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#FF9800",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -9280,6 +9630,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -9336,39 +9687,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "4.3",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "4.3",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " ES:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " ES: Essen",
+                                          "value": "Essen",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -9390,17 +9746,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 3,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 3,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -9454,9 +9813,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#BBBBBB",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#BBBBBB",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -9522,6 +9885,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
@@ -9578,39 +9942,44 @@
                                       "box": {},
                                       "children": [
                                         {
-                                          "box": {},
-                                          "children": [
-                                            {
-                                              "parent": [Circular],
-                                              "type": "TEXT_INSTANCE",
-                                              "value": "4.4",
-                                            },
-                                          ],
                                           "parent": [Circular],
-                                          "props": {
-                                            "class": "tabular-nums",
-                                          },
-                                          "style": {
-                                            "fontFeatureSettings": {
-                                              "tnum": 1,
-                                            },
-                                          },
-                                          "type": "TEXT",
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "4.4",
                                         },
+                                      ],
+                                      "parent": [Circular],
+                                      "props": {
+                                        "class": "tabular-nums",
+                                      },
+                                      "style": {
+                                        "fontFeatureSettings": {
+                                          "tnum": 1,
+                                        },
+                                      },
+                                      "type": "TEXT",
+                                    },
+                                    {
+                                      "parent": [Circular],
+                                      "type": "TEXT_INSTANCE",
+                                      "value": " LP:  ",
+                                    },
+                                    {
+                                      "box": {},
+                                      "children": [
                                         {
                                           "parent": [Circular],
                                           "type": "TEXT_INSTANCE",
-                                          "value": " LP: Heimreise",
+                                          "value": "Heimreise",
                                         },
                                       ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
-                                          "fontWeight": 500,
+                                          "fontWeight": 600,
                                         },
                                       },
                                       "style": {
-                                        "fontWeight": 500,
+                                        "fontWeight": 600,
                                       },
                                       "type": "TEXT",
                                     },
@@ -9632,17 +10001,20 @@
                                   "parent": [Circular],
                                   "props": {
                                     "class": "picasso-schedule-entry-title",
+                                    "hyphenationCallback": undefined,
                                     "style": {
                                       "color": "#000",
                                       "fontSize": "8pt",
+                                      "maxLines": 6,
+                                      "textOverflow": "ellipsis",
                                     },
                                   },
                                   "style": {
                                     "color": "#000",
-                                    "flexGrow": "1",
                                     "fontSize": "8pt",
-                                    "height": "16pt",
                                     "lineHeight": "1",
+                                    "maxLines": 6,
+                                    "textOverflow": "ellipsis",
                                   },
                                   "type": "TEXT",
                                 },
@@ -9696,9 +10068,13 @@
                                   "props": {
                                     "class": "responsibles-avatars picasso-schedule-entry-responsibles",
                                     "key": 0,
+                                    "style": {
+                                      "backgroundColor": "#90B7E4",
+                                    },
                                   },
                                   "style": {
                                     "alignItems": "flex-end",
+                                    "backgroundColor": "#90B7E4",
                                     "display": "flex",
                                     "flexDirection": "row",
                                   },
@@ -9764,6 +10140,7 @@
                             "justifyContent": "flex-start",
                             "marginBottom": "0.2pt",
                             "minHeight": "0",
+                            "overflow": "hidden",
                             "padding": "0 0.5pt",
                           },
                           "type": "VIEW",
