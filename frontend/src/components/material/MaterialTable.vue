@@ -450,6 +450,7 @@ export default {
       return item.materialList?.().$reload()
     },
     reloadAfterMaterialListChange() {
+      this.api.reload(this.camp.materialLists())
       if (this.materialList) {
         this.api.reload(this.materialItemCollection)
       }

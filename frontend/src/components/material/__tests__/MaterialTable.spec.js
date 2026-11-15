@@ -122,4 +122,15 @@ describe.each([
 
     expect(api.reload).not.toHaveBeenCalledWith(materialItemCollection)
   })
+
+  it.each([
+    ['one material list is', { materialList: sourceList }],
+    ['all material lists are', {}],
+  ])('reloads the item counts when %s displayed', async (_, props) => {
+    const api = await mountTable(width, props)
+
+    await moveItem()
+
+    expect(api.reload).toHaveBeenCalledWith(materialLists)
+  })
 })
