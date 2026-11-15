@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest'
-import { toWorkbook } from '@/components/material/useMaterialViewHelper.js'
+import {
+  indexesOfPeriodsToOpen,
+  toWorkbook,
+} from '@/components/material/useMaterialViewHelper.js'
 
 describe('toWorkBook', () => {
   it('replaces invalid characters', () => {
@@ -36,6 +39,25 @@ describe('toWorkBook', () => {
     const workbook = toWorkbook(sheets)
 
     expect(Object.entries(workbook.Sheets)).toHaveLength(sheets.length)
+  })
+})
+
+describe('indexesOfPeriodsToOpen', () => {
+  const now = Date.parse('2026-07-15')
+  const ended = { end: '2026-07-14' }
+  const running = { end: '2026-07-15' }
+  const upcoming = { end: '2026-08-10' }
+
+  it('opens the periods which have not ended', () => {
+    expect(indexesOfPeriodsToOpen([ended, running, upcoming], now)).toEqual([1, 2])
+  })
+
+  it('opens all periods if all of them have ended', () => {
+    expect(indexesOfPeriodsToOpen([ended, ended], now)).toEqual([0, 1])
+  })
+
+  it('opens nothing if there are no periods', () => {
+    expect(indexesOfPeriodsToOpen([], now)).toEqual([])
   })
 })
 
