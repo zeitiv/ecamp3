@@ -55,6 +55,7 @@
         :show-y-s-physical-activity-duration="
           content.options.showYSPhysicalActivityDuration === true
         "
+        :show-location="content.options.showLocation === true"
       />
       <TimeColumn
         v-if="!compact && pageSize === 'A3'"

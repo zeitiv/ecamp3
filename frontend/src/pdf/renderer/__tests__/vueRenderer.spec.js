@@ -114,6 +114,7 @@ describe.each(['A3', 'A4', 'A5'])('in %p format', (pageSize) => {
                     periods: ['/periods/16b2fcffdd8e'],
                     orientation: 'L',
                     showYSPhysicalActivityDuration: true,
+                    showLocation: true,
                     filter: {
                       period: null,
                       responsible: [],

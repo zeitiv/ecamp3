@@ -22,7 +22,7 @@
             {{ category + ': ' + title }}
           </Text>
           <Text :style="{ fontSize: fontSize * 0.8 + 'pt' }">{{
-            ysPhysicalActivityDurationAfterTitle
+            locationAfterTitle + ysPhysicalActivityDurationAfterTitle
           }}</Text>
         </Text>
       </Link>
@@ -86,6 +86,7 @@ export default {
     avatars: { type: Boolean, default: false },
     config: { type: Object, required: true },
     showYSPhysicalActivityDuration: { type: Boolean, default: false },
+    showLocation: { type: Boolean, default: false },
   },
   computed: {
     color() {
@@ -99,6 +100,13 @@ export default {
     },
     title() {
       return this.scheduleEntry.activity().title
+    },
+    location() {
+      return this.scheduleEntry.activity().location
+    },
+    locationAfterTitle() {
+      if (!this.showLocation || !this.location) return ''
+      return (this.twoLinesFit ? '\n' : ' ') + this.location
     },
     ysPhysicalActivityDuration() {
       return ysPhysicalActivityDurationFormatted(

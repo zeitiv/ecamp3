@@ -19,6 +19,7 @@
         :avatars="avatars"
         :config="config"
         :show-y-s-physical-activity-duration="showYSPhysicalActivityDuration"
+        :show-location="showLocation"
       />
     </View>
   </View>
@@ -44,6 +45,7 @@ export default {
     avatars: { type: Boolean, default: false },
     config: { type: Object, required: true },
     showYSPhysicalActivityDuration: { type: Boolean, default: false },
+    showLocation: { type: Boolean, default: false },
   },
   computed: {
     relevantScheduleEntries() {

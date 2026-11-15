@@ -1581,7 +1581,14 @@
                                     },
                                     {
                                       "box": {},
-                                      "children": [],
+                                      "children": [
+                                        {
+                                          "parent": [Circular],
+                                          "type": "TEXT_INSTANCE",
+                                          "value": "
+Oerlikon 👂",
+                                        },
+                                      ],
                                       "parent": [Circular],
                                       "props": {
                                         "style": {
