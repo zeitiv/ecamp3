@@ -30,13 +30,23 @@
         @update:model-value="$emit('update:modelValue', modelValue)"
       />
     </div>
-    <e-checkbox
-      v-if="hasYSPhysicalActivityDuration"
-      v-model="options.showYSPhysicalActivityDuration"
-      path="showYSPhysicalActivityDuration"
-      :label="$t('entity.scheduleEntry.fields.ysPhysicalActivityDuration')"
-      @update:model-value="$emit('update:modelValue', modelValue)"
-    />
+    <div :class="{ 'e-picasso-config__row e-picasso-config__row--wrap': landscape }">
+      <e-checkbox
+        v-model="options.showLocation"
+        path="showLocation"
+        density="compact"
+        :label="$t('components.print.config.picassoConfig.showLocation')"
+        @update:model-value="$emit('update:modelValue', modelValue)"
+      />
+      <e-checkbox
+        v-if="hasYSPhysicalActivityDuration"
+        v-model="options.showYSPhysicalActivityDuration"
+        path="showYSPhysicalActivityDuration"
+        density="compact"
+        :label="$t('entity.scheduleEntry.fields.ysPhysicalActivityDuration')"
+        @update:model-value="$emit('update:modelValue', modelValue)"
+      />
+    </div>
     <div class="flex-grow-1"></div>
     <DialogScheduleEntryFilter
       :camp="camp"
@@ -137,6 +147,7 @@ export default {
       orientation: 'L',
       showYSPhysicalActivityDuration: false,
       responsibles: 'names',
+      showLocation: false,
       filter: repairFilterConfig(null, camp),
     }
   },
@@ -160,6 +171,9 @@ export default {
     if (!['names', 'avatars'].includes(config.options.responsibles)) {
       config.options.responsibles = 'names'
     }
+    if (typeof config.options.showLocation !== 'boolean') {
+      config.options.showLocation = false
+    }
     config.options.filter = repairFilterConfig(config.options.filter, camp)
     return config
   },
@@ -170,6 +184,11 @@ export default {
 .e-picasso-config__row {
   display: flex;
   gap: 8px;
+}
+
+.e-picasso-config__row--wrap {
+  flex-wrap: wrap;
+  row-gap: 0;
 }
 
 .e-picasso-config__row > :deep(.e-form-container + .e-form-container) {

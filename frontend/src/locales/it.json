@@ -425,7 +425,8 @@
           "orientation": "Layout della pagina",
           "responsibles": "Responsabili",
           "responsiblesAvatars": "Avatar",
-          "responsiblesNames": "Nomi"
+          "responsiblesNames": "Nomi",
+          "showLocation": "Mostra il luogo"
         },
         "programConfig": {
           "dayOverview": "Panoramica della giornata di stampa"

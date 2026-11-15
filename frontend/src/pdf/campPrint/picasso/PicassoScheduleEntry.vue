@@ -22,7 +22,7 @@
             {{ category + ': ' + title }}
           </Text>
           <Text :style="{ fontSize: fontSize * 0.8 + 'pt' }">{{
-            ysPhysicalActivityDurationAfterTitle
+            locationAfterTitle + ysPhysicalActivityDurationAfterTitle
           }}</Text>
         </Text>
       </Link>
@@ -55,10 +55,15 @@
         <Responsibles
           v-if="avatars"
           class="picasso-schedule-entry-responsibles"
+          v-bind="responsiblesBackground"
           :activity="scheduleEntry.activity()"
           avatars
         />
-        <View v-else class="picasso-schedule-entry-responsibles-names">
+        <View
+          v-else
+          class="picasso-schedule-entry-responsibles-names"
+          v-bind="responsiblesBackground"
+        >
           <Text v-for="name in responsibleNames">{{ name }}</Text>
         </View>
         <View class="picasso-schedule-entry-spacer" />
@@ -86,6 +91,7 @@ export default {
     avatars: { type: Boolean, default: false },
     config: { type: Object, required: true },
     showYSPhysicalActivityDuration: { type: Boolean, default: false },
+    showLocation: { type: Boolean, default: false },
   },
   computed: {
     color() {
@@ -99,6 +105,20 @@ export default {
     },
     title() {
       return this.scheduleEntry.activity().title
+    },
+    location() {
+      return this.scheduleEntry.activity().location
+    },
+    locationShown() {
+      return this.showLocation && !!this.location
+    },
+    locationAfterTitle() {
+      if (!this.locationShown) return ''
+      return (this.twoLinesFit ? '\n' : ' ') + this.location
+    },
+    responsiblesBackground() {
+      if (!this.locationShown) return {}
+      return { style: { backgroundColor: this.color, paddingLeft: '1.5pt' } }
     },
     ysPhysicalActivityDuration() {
       return ysPhysicalActivityDurationFormatted(

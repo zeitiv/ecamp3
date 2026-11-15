@@ -513,7 +513,8 @@
           "portrait": "Hochformat",
           "responsibles": "Verantwortliche",
           "responsiblesAvatars": "Avatare",
-          "responsiblesNames": "Namen"
+          "responsiblesNames": "Namen",
+          "showLocation": "Ort anzeigen"
         },
         "programConfig": {
           "dayOverview": "Tagesübersicht"
