@@ -60,7 +60,8 @@
     </DialogActivityEdit>
 
     <h4 class="e-picasso-entry__title">
-      {{ activityName }}
+      <span class="e-picasso-entry__title-prefix">{{ activityNamePrefix }}</span
+      >{{ activityTitle }}
     </h4>
 
     <template v-if="location">
@@ -118,7 +119,8 @@
     :style="colorStyles"
   >
     <h4 class="e-picasso-entry__title">
-      {{ activityName }}
+      <span class="e-picasso-entry__title-prefix">{{ activityNamePrefix }}</span
+      >{{ activityTitle }}
     </h4>
     <template v-if="location">
       <br v-if="!isTinyDuration" />
@@ -219,16 +221,23 @@ export default {
     category() {
       return this.activity.category()
     },
-    activityName() {
+    activityNamePrefix() {
+      if (this.scheduleEntry.tmpEvent || this.activityLoading) return ''
+
+      return (
+        (this.scheduleEntry.number ? this.scheduleEntry.number + ' ' : '') +
+        (this.category.short ? this.category.short + ': ' : '')
+      )
+    },
+    activityTitle() {
       if (this.scheduleEntry.tmpEvent) return this.$t('entity.activity.new')
 
       if (this.activityLoading) return this.$t('global.loading')
 
-      return (
-        (this.scheduleEntry.number ? this.scheduleEntry.number + ' ' : '') +
-        (this.category.short ? this.category.short + ': ' : '') +
-        this.activity.title
-      )
+      return this.activity.title
+    },
+    activityName() {
+      return this.activityNamePrefix + this.activityTitle
     },
     activityResponsibles() {
       if (this.scheduleEntry.tmpEvent) return []
@@ -352,10 +361,8 @@ export default {
   user-select: none;
   display: block;
   height: 100%;
-  padding: 1px;
-  @media #{map.get(settings.$display-breakpoints, 'sm-and-up')} {
-    padding: 1px 2px;
-  }
+  padding: 1px 2px;
+  line-height: 1.25;
   @media #{map.get(settings.$display-breakpoints, 'md-and-up')} {
     padding: 2px 3px;
     line-height: normal;
@@ -460,6 +467,10 @@ export default {
   hyphenate-limit-lines: 2;
   hyphenate-limit-last: always;
   hyphenate-limit-zone: 8%;
+}
+
+.e-picasso-entry__title-prefix {
+  font-weight: normal;
 }
 
 .e-picasso-entry {
