@@ -33,7 +33,7 @@
     <e-checkbox
       v-model="options.showLocation"
       path="showLocation"
-      :label="$t('entity.activity.fields.location')"
+      :label="$t('components.print.config.picassoConfig.showLocation')"
       @update:model-value="$emit('update:modelValue', modelValue)"
     />
     <e-checkbox

@@ -503,7 +503,8 @@
           "portrait": "Portrait",
           "responsibles": "Responsables",
           "responsiblesAvatars": "Avatars",
-          "responsiblesNames": "Noms"
+          "responsiblesNames": "Noms",
+          "showLocation": "Afficher le lieu"
         },
         "programConfig": {
           "dayOverview": "Aperçu des jours"

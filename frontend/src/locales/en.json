@@ -513,7 +513,8 @@
           "portrait": "Portrait",
           "responsibles": "Responsibles",
           "responsiblesAvatars": "Avatars",
-          "responsiblesNames": "Names"
+          "responsiblesNames": "Names",
+          "showLocation": "Show location"
         },
         "programConfig": {
           "dayOverview": "print day overview"
