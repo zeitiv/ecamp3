@@ -107,16 +107,18 @@ function downloadMaterialList(camp, collection, materialListName) {
   }
 }
 
+export function indexesOfPeriodsToOpen(periods, now = Date.now()) {
+  const indexes = periods.map((_, index) => index)
+  const notEnded = indexes.filter((index) => Date.parse(periods[index].end) >= now)
+  return notEnded.length > 0 ? notEnded : indexes
+}
+
 function loadPeriods(camp) {
   const openPeriods = ref([])
 
-  camp.periods()._meta.load.then((period) =>
-    period.items.forEach((period, index) => {
-      if (Date.parse(period.end) >= Date.now()) {
-        openPeriods.value.push(index)
-      }
-    })
-  )
+  camp.periods()._meta.load.then((periods) => {
+    openPeriods.value = indexesOfPeriodsToOpen(periods.items)
+  })
 
   return openPeriods
 }
