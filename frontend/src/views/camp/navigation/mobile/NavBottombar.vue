@@ -63,11 +63,10 @@ export default {
   --v-icon-size-multiplier: 1;
 }
 
-:deep(.v-bottom-navigation--grow .v-bottom-navigation__content > .v-btn) {
-  flex-basis: auto;
-  flex-grow: 0;
-  flex-shrink: 1;
-  width: 100%;
+.ec-bottombar :deep(.v-bottom-navigation__content > .v-btn) {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-inline: 4px;
 }
 
 .ec-home-button {
