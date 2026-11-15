@@ -31,6 +31,12 @@
       />
     </div>
     <e-checkbox
+      v-model="options.showLocation"
+      path="showLocation"
+      :label="$t('entity.activity.fields.location')"
+      @update:model-value="$emit('update:modelValue', modelValue)"
+    />
+    <e-checkbox
       v-if="hasYSPhysicalActivityDuration"
       v-model="options.showYSPhysicalActivityDuration"
       path="showYSPhysicalActivityDuration"
@@ -137,6 +143,7 @@ export default {
       orientation: 'L',
       showYSPhysicalActivityDuration: false,
       responsibles: 'names',
+      showLocation: false,
       filter: repairFilterConfig(null, camp),
     }
   },
@@ -159,6 +166,9 @@ export default {
     }
     if (!['names', 'avatars'].includes(config.options.responsibles)) {
       config.options.responsibles = 'names'
+    }
+    if (typeof config.options.showLocation !== 'boolean') {
+      config.options.showLocation = false
     }
     config.options.filter = repairFilterConfig(config.options.filter, camp)
     return config
