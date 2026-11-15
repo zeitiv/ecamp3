@@ -106,6 +106,7 @@
         :uri="item.uri"
         path="materialList"
         :items="materialLists"
+        @saved="reloadAfterMaterialListChange"
       />
       <span v-if="item.readonly">{{ item.listName }}</span>
     </template>
@@ -137,6 +138,7 @@
         <DialogMaterialItemEdit
           v-else
           :material-item-uri="item.uri"
+          :success-handler="reloadAfterMaterialListChange"
           :delete-success-handler="() => reloadMaterialList(item)"
         >
           <template #activator="{ props }">
@@ -446,6 +448,12 @@ export default {
   methods: {
     reloadMaterialList(item) {
       return item.materialList?.().$reload()
+    },
+    reloadAfterMaterialListChange() {
+      this.api.reload(this.camp.materialLists())
+      if (this.materialList) {
+        this.api.reload(this.materialItemCollection)
+      }
     },
     onResize({ width }) {
       this.clientWidth = width
