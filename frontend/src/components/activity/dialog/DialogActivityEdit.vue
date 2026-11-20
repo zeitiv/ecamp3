@@ -31,6 +31,7 @@ import DialogForm from '@/components/dialog/DialogForm.vue'
 import DialogBase from '@/components/dialog/DialogBase.vue'
 import DialogActivityForm from './DialogActivityForm.vue'
 import { firstActivityScheduleEntryRoute } from '@/router.js'
+import { reloadScheduleEntries } from '@/helpers/reloadScheduleEntries.js'
 
 export default {
   name: 'DialogActivityEdit',
@@ -70,6 +71,7 @@ export default {
         this.entityData.scheduleEntries = scheduleEntries.items.map((scheduleEntry) => {
           return {
             period: scheduleEntry.period,
+            originalPeriod: scheduleEntry.period,
             start: scheduleEntry.start,
             end: scheduleEntry.end,
             key: scheduleEntry._meta.self,
@@ -155,10 +157,24 @@ export default {
       this.$emit('submit')
       return promise
     },
-    updatedSuccessful(data) {
+    async updatedSuccessful(data) {
+      const _events = this._events
       this.close()
-      this.api.reload(this.activity)
-      this.api.reload(this.scheduleEntry.period().scheduleEntries())
+      try {
+        await Promise.all([
+          this.api.reload(this.activity),
+          // entries may have moved to another period: reload old and new periods
+          reloadScheduleEntries(this.api, [
+            this.period,
+            ...this.entityData.scheduleEntries
+              .filter((entry) => entry.self)
+              .flatMap((entry) => [entry.originalPeriod?.(), entry.period()]),
+          ]),
+        ])
+      } catch (e) {
+        this.onError(_events, e)
+        return
+      }
       this.$emit('activityUpdated', data)
     },
   },
